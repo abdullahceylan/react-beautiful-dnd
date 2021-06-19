@@ -7,7 +7,7 @@
     "@atlaskit/css-reset": "^2.0.0",
     "@atlaskit/icon": "^11.0.0",
     "@atlaskit/theme": "^3.0.0",
-    "gatsby": "^1.9.241",
+    "gatsby": "^2.19.25",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-react-helmet": "^2.0.8",
     "gatsby-plugin-styled-components": "^2.0.11",
