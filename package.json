@@ -46,19 +46,21 @@
     "build-storybook": "build-storybook -c .storybook -o site",
     "website:start": "cd website && yarn develop",
     "website:build": "cd website && yarn build",
-    "prepare": "cd website && yarn",
-    "prepublishOnly": "yarn build"
+    "prepare": "yarn run snyk-protect && cd website && yarn",
+    "prepublishOnly": "yarn build",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@babel/runtime": "7.0.0-beta.54",
     "css-box-model": "^1.0.0",
     "memoize-one": "^4.0.0",
-    "prop-types": "^15.6.1",
+    "prop-types": "^15.6.2",
     "raf-schd": "^4.0.0",
     "react-motion": "^0.5.2",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
-    "tiny-invariant": "^0.0.3"
+    "tiny-invariant": "^0.0.3",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@atlaskit/css-reset": "^2.0.7",
@@ -126,5 +128,6 @@
   },
   "jest-junit": {
     "output": "test-reports/junit/js-test-results.xml"
-  }
+  },
+  "snyk": true
 }
