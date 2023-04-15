@@ -1,0 +1,10 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:extend:20180424':
+    - gatsby-transformer-remark > unified > extend:
+        patched: '2023-04-15T20:37:25.016Z'
+    - gatsby-transformer-remark > remark > unified > extend:
+        patched: '2023-04-15T20:37:25.016Z'
